@@ -8,7 +8,7 @@
 
 Step
 ====
-1. Create CMK from AWS Console.  Please name the CMK as 'demo' and create CMK for symmatic key.  You have select administrator and key's user from user that you create from pre-requisite
+1. Create CMK from AWS Console.  Please name the CMK as 'demo' and create CMK for symmatic key.  You have to select administrator and key's user from user that you create from pre-requisite
 
 2. Create data key by using CMK
 aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1
