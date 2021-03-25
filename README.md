@@ -11,7 +11,7 @@ Step
 1. Create CMK from AWS Console.  Please name the CMK as 'demo' and create CMK for symmatic key.  You have to select administrator and key's user from user that you create from pre-requisite
 
 2. Create data key by using CMK
-<br><b>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1
+<br><b>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1</b>
 <br>Sample output<br>
 {
     "CiphertextBlob": "AQIDAHhtAy7pXXMIxPNxuNayt6xCjdjKw84hndoaLSlL3gCSGwFw7Y57twBthh+UoDkU+9H7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMsfzWys5jJKRVzO02AgEQgDsN4H73NxjS2K+w+Un88bSDMM+qQcpZI41jspYbnt6pvaEg++daNQoEKQ0j+qRRHgc5j3wmXe0cWdG
@@ -20,11 +20,11 @@ XXXXX",
     "KeyId": "arn:aws:kms:ap-southeast-1:478263352179:key/8e208876-f685-495f-a6c5-619f1bXXXXX"
 }
 
-Plaintext is datakey
+Plaintext is datakey<br>
 CiphertextBlob is datakey that is encrypted by your demo CMK
 
 3. Create data key again.  Now you have to export output into keys.txt  CMK can have multiple datakey
-<br>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1 > keys.txt
+<br><b>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1 > keys.txt</b>
 
 <br>Sample result in keys.txt
 <br>{
