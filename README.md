@@ -11,7 +11,7 @@ Step
 1. Create CMK from AWS Console.  Please name the CMK as 'demo' and create CMK for symmatic key.  You have to select administrator and key's user from user that you create from pre-requisite
 
 <br>
-![alt text](https://github.com/aomjk/KMS-Workshop/blob/663ec2de5bc5e1a12ce6c188903d78bb03a6f3ce/Screen%20Shot%202564-03-25%20at%2013.21.38.png)
+<img src='https://github.com/aomjk/KMS-Workshop/blob/663ec2de5bc5e1a12ce6c188903d78bb03a6f3ce/Screen%20Shot%202564-03-25%20at%2013.21.38.png'></img>
 
 
 2. Create data key by using CMK
