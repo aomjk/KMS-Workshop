@@ -15,15 +15,15 @@ Step
 <img src='https://github.com/aomjk/KMS-Workshop/blob/663ec2de5bc5e1a12ce6c188903d78bb03a6f3ce/Screen%20Shot%202564-03-25%20at%2013.21.38.png'></img>
 
 <br>
-    1.2 Create a Symmetric key.  Click Next
+    * Create a Symmetric key.  Click Next
 <img src='https://github.com/aomjk/KMS-Workshop/blob/786637ae4bdcde4793b0fc02a174016ed16d6d7a/Screen%20Shot%202564-03-25%20at%2013.33.32.png'></img>
 <br>
-    1.3 Enter 'demo' for alias name and click Next
+    * Enter 'demo' for alias name and click Next
 <img src='https://github.com/aomjk/KMS-Workshop/blob/0eb5122b6c068182f8d1a5075fe988b03cf67fc8/Screen%20Shot%202564-03-25%20at%2013.37.06.png'></img>
 <br>
-    <t>1.4 and 1.5 Select your IAM user that has previledge for manage and use key</t>
+    * 1.4 and 1.5 Select your IAM user that has previledge for manage and use key</t>
 <br>
-    <t>1.6 Click 'Finish' for creation the CMK</t>
+    * 1.6 Click 'Finish' for creation the CMK</t>
 <br>
 2. Create data key by using CMK
 <br><b>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1</b>
