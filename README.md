@@ -11,9 +11,8 @@ Step
 1. Create CMK from AWS Console.  Please name the CMK as 'demo' and create CMK for symmatic key.  You have to select administrator and key's user from user that you create from pre-requisite
 
 2. Create data key by using CMK
-<br>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1
-
-<br>Sample output
+<br><b>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1
+<br>Sample output<br>
 {
     "CiphertextBlob": "AQIDAHhtAy7pXXMIxPNxuNayt6xCjdjKw84hndoaLSlL3gCSGwFw7Y57twBthh+UoDkU+9H7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMsfzWys5jJKRVzO02AgEQgDsN4H73NxjS2K+w+Un88bSDMM+qQcpZI41jspYbnt6pvaEg++daNQoEKQ0j+qRRHgc5j3wmXe0cWdG
 XXXXX",
