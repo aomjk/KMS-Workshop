@@ -21,7 +21,7 @@ Step
     1.3 Enter 'demo' for alias name and click Next
 <img src='https://github.com/aomjk/KMS-Workshop/blob/0eb5122b6c068182f8d1a5075fe988b03cf67fc8/Screen%20Shot%202564-03-25%20at%2013.37.06.png'></img>
 <br>
-    1.4 and 1.5 Select your IAM user that has previledge for manage and use key
+    <tab>1.4 and 1.5 Select your IAM user that has previledge for manage and use key</tab>
 <br>
     1.6 Click 'Finish' for creation the CMK
 <br>
