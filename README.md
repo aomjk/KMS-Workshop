@@ -40,13 +40,15 @@ echo ‘RsJTy8azIUUugCwgMF5uQdpc5Ok0oIBDT8FkmvQXXXXX‘ | base64 --decode > data
 5. Decode encrypted datakey, the ciphertextBlob.
 echo 'AQIDAHhtAy7pXXMIxPNxuNayt6xCjdjKw84hndoaLSlL3gCSGwFw7Y57twBthh+UoDkU+9H7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMsfzWys5jJKRVzO02AgEQgDsN4H73NxjS2K+w+Un88bSDMM+qQcpZI41jspYbnt6pvaEg++daNQoEKQ0j+qRRHgc5j3wmXe0cWdGXXXXX' | base64 --decode > encrypted-datakey
 
-<b>Encryption</B>
+<b>Encryption</B><br>
+
 6. Now Let's start encrypt the passwords.txt with the datakey that we got from #3.  Encrypt data with datakey
 openssl enc -in ./passwords.txt -out ./passwords-encrypted.txt -e -aes256 -k fileb://./datakey
 
 7. In real situation, AWS does not recommend to store datakey in Plaintext file. Therefore, remove datakey and passwords.txt
 
-<b>Decryption</B>
+<b>Decryption</B><br>
+
 8. In order to decrypted the passwords-encrypted.txt, we must have datakey.  Now datakey is removed, we have the encrypted datakey version, encrypted-datakey, which encrypted by demo's CMK.   In this task, we will use CMK to decrypted the 'encrypted-datakey' first.
 aws kms decrypt --ciphertext-blob fileb://./encrypted-datakey
 
