@@ -10,11 +10,10 @@ Step
 ====
 1. Create CMK from AWS Console.  Please name the CMK as 'demo' and create CMK for symmatic key.  You have to select administrator and key's user from user that you create from pre-requisite
 
-    * Go to AWS Console > KMS services
+   * Go to AWS Console > KMS services
 <br>
 <img src='https://github.com/aomjk/KMS-Workshop/blob/663ec2de5bc5e1a12ce6c188903d78bb03a6f3ce/Screen%20Shot%202564-03-25%20at%2013.21.38.png'></img>
-
-    * Create a Symmetric key.  Click Next
+   * Create a Symmetric key.  Click Next
 <img src='https://github.com/aomjk/KMS-Workshop/blob/786637ae4bdcde4793b0fc02a174016ed16d6d7a/Screen%20Shot%202564-03-25%20at%2013.33.32.png'></img>
 <br>
     * Enter 'demo' for alias name and click Next
