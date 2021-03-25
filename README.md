@@ -13,11 +13,11 @@ Step
 2. Create data key by using CMK
 <br><b>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1</b>
 <br>Sample output<br>
-{
+{<br>
     "CiphertextBlob": "AQIDAHhtAy7pXXMIxPNxuNayt6xCjdjKw84hndoaLSlL3gCSGwFw7Y57twBthh+UoDkU+9H7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMsfzWys5jJKRVzO02AgEQgDsN4H73NxjS2K+w+Un88bSDMM+qQcpZI41jspYbnt6pvaEg++daNQoEKQ0j+qRRHgc5j3wmXe0cWdG
-XXXXX",
-    "Plaintext": "si+XiMuQqSK/BCsQIn0zSaxalEzh1eN6SGv7FB6XXXXX",
-    "KeyId": "arn:aws:kms:ap-southeast-1:478263352179:key/8e208876-f685-495f-a6c5-619f1bXXXXX"
+XXXXX",<br>
+    "Plaintext": "si+XiMuQqSK/BCsQIn0zSaxalEzh1eN6SGv7FB6XXXXX",<br>
+    "KeyId": "arn:aws:kms:ap-southeast-1:478263352179:key/8e208876-f685-495f-a6c5-619f1bXXXXX"<br>
 }
 
 Plaintext is datakey<br>
