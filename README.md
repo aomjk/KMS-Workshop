@@ -35,7 +35,7 @@ CiphertextBlob is datakey that is encrypted by your demo CMK
 }
 
 4. Decode plaintext datakey. The plaintext datakey is in encoded base64.  In order to use datakey, you have to decode it.
-<br><b>echo ‘RsJTy8azIUUugCwgMF5uQdpc5Ok0oIBDT8FkmvQXXXXX‘ | base64 --decode > datakey</b>
+<br><b>echo 'RsJTy8azIUUugCwgMF5uQdpc5Ok0oIBDT8FkmvQXXXXX' | base64 --decode > datakey</b>
 
 5. Decode encrypted datakey, the ciphertextBlob.
 <br><b>echo 'AQIDAHhtAy7pXXMIxPNxuNayt6xCjdjKw84hndoaLSlL3gCSGwFw7Y57twBthh+UoDkU+9H7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMsfzWys5jJKRVzO02AgEQgDsN4H73NxjS2K+w+Un88bSDMM+qQcpZI41jspYbnt6pvaEg++daNQoEKQ0j+qRRHgc5j3wmXe0cWdGXXXXX' | base64 --decode > encrypted-datakey</b>
@@ -60,7 +60,7 @@ Result<br>
 }
 
 9. Export Plaintext in decode base64 format into datakey file
-<br><b>echo ‘i+XiMuQqSK/BCsQIn0zSaxalEzh1eN6SGv7FB6Ykxs=‘ | base64 --decode > datakey</b>
+<br><b>echo 'si+XiMuQqSK/BCsQIn0zSaxalEzh1eN6SGv7FB6XXXXX' | base64 --decode > datakey</b>
 
 10. Now we already haved datakey file which ready to decrypted the passwords-encrypted.txt
 <br><b>openssl enc -in ./passwords-encrypted.txt -out ./passwords-decryptd.txt -d -aes256 -k fileb://./datakey</b>
