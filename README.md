@@ -1,6 +1,6 @@
 # KMS-Workshop
 
-Pre-requisite
+<b>Pre-requisite</b>
 
 - You must have AWS Account ID
 - Cloud9 must be ready
