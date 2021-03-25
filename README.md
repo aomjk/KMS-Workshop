@@ -13,7 +13,7 @@ Step
 2. Create data key by using CMK
 <br>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1
 
-Sample output
+<br>Sample output
 {
     "CiphertextBlob": "AQIDAHhtAy7pXXMIxPNxuNayt6xCjdjKw84hndoaLSlL3gCSGwFw7Y57twBthh+UoDkU+9H7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMsfzWys5jJKRVzO02AgEQgDsN4H73NxjS2K+w+Un88bSDMM+qQcpZI41jspYbnt6pvaEg++daNQoEKQ0j+qRRHgc5j3wmXe0cWdG
 XXXXX",
@@ -27,8 +27,8 @@ CiphertextBlob is datakey that is encrypted by your demo CMK
 3. Create data key again.  Now you have to export output into keys.txt  CMK can have multiple datakey
 <br>aws kms generate-data-key --key-id alias/demo --key-spec AES_256 --region ap-southeast-1 > keys.txt
 
-Sample result in keys.txt
-{
+<br>Sample result in keys.txt
+<br>{
     "CiphertextBlob": "AQIDAHhtAy7pXXMIxPNxuNayt6xCjdjKw84hndoaLSlL3gCSGwEOb9dSoOLb92+wdceRRKTzAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMzRtoaCyWyHsjw1YmAgEQgDtvUQgGINuVHE057R9TNZ/XFNKiiDU2SGGgTjKGVYzlZrZ+zFfMdU6zGz7HYxW8f9YOUMVY5LxD70TXXXXX",
     "Plaintext": "RsJTy8azIUUugCwgMF5uQdpc5Ok0oIBDT8FkmvQXXXXX",
     "KeyId": "arn:aws:kms:ap-southeast-1:478263352179:key/8e208876-f685-495f-a6c5-619f1bXXXXX"
